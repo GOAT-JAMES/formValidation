@@ -4,6 +4,8 @@ window.onload = function () {
 };
 function main() {
     resetErrorMessages();
+    isTxtPresent("first-name", "First Name is required");
+    isTxtPresent("last-name", "Last Name is required");
 }
 function resetErrorMessages() {
     var allSpans = document.querySelectorAll("form span");

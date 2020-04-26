@@ -5,8 +5,8 @@ window.onload = function(){
 
 function main():void{
     resetErrorMessages();
-    //isTxtPresent("first-name", "First Name is required");
-    //isTxtPresent("last-name", "Last Name is required");
+    isTxtPresent("first-name", "First Name is required");
+    isTxtPresent("last-name", "Last Name is required");
 }
 
 /**
