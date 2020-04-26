@@ -2,6 +2,33 @@ form span{
     color: red;
 }
 
+h1{
+    text-align: center;
+    
+}
+
+h1, form label, form button, form input{
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
+body{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+button{
+    padding: .75em;
+    border-radius: .3em;
+    background-color: rgba(0, 100, 0, 0.39);
+    color: purple;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgba(0, 0, 255, 0.582);
+}
+
 input[type=text]{
     margin-bottom: 1em;
 }
