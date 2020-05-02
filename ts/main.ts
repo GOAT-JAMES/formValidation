@@ -9,11 +9,16 @@ function main():void{
     isTxtPresent("last-name", "Last Name is required");
 
     // Validate date
-    let dobBox = <HTMLInputElement> document.getElementById("dob");
-    let dob = dobBox.value;
+    CheckValidDate();
+}
 
-    if (!isValidDate (dob) ){
-        dobBox.nextElementSibling.innerHTML = "Invalid Format (mm/dd/yyyy)";
+function CheckValidDate() {
+    let dobBox = <HTMLInputElement>document.getElementById("dob");
+    let dob = dobBox.value;
+    if (!isValidDate(dob)) {
+        //dobBox.nextElementSibling.innerHTML = "Invalid Format (mm/dd/yyyy)";
+        let errorSpan = document.getElementById("dob-span");
+        errorSpan.innerHTML = "Invalid Format (mm/dd/yyyy)";
     }
 }
 
