@@ -3,6 +3,14 @@ window.onload = function () {
     formBtn.onclick = main;
 };
 function main() {
+    var msgHeading = document.createElement("h2");
+    msgHeading.innerText = "Processing form";
+    msgHeading.setAttribute("class", "message");
+    var h1 = document.querySelector("h1");
+    h1.insertAdjacentElement("afterend", msgHeading);
+    setTimeout(function () {
+        msgHeading.remove();
+    }, 20000);
     resetErrorMessages();
     isTxtPresent("first-name", "First Name is required");
     isTxtPresent("last-name", "Last Name is required");
